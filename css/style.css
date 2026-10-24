@@ -1,0 +1,406 @@
+body {
+  font-size: 0.9rem;
+  background-color: #f0f0f0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* header */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+#header h1 {
+  width: 100px;
+}
+
+#header a img {
+  transform: translate(160px);
+}
+
+nav.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transform: translate(-750px);
+}
+
+.contact-button {
+  background-color: #333;
+  color: #f0f0f0;
+  padding: 15px 30px;
+  text-decoration: none;
+  transform: translateX(-20px);
+  border-radius: 5px;
+}
+
+
+/* main */
+main img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.NEWS {
+  margin-top: 90px;
+}
+
+/* 見出しとニュース一覧をまとめる箱 */
+.news-inner {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* NEWS・ニュースの見出し */
+.news-inner h1,
+.news-inner h3 {
+  margin: 0;
+  text-align: left;
+  font-weight: normal;
+}
+
+.news-inner h1 {
+  font-size: 40px;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+}
+
+.news-inner h3 {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.news-inner h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  margin-top: 20px;
+}
+
+
+/* ニュース3つを横並び */
+.news-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+/* 1つのニュース */
+.news-list li {
+  flex: 1;
+  padding: 10px 20px;
+  border-right: 1px solid #000;
+}
+
+/* 1つ目の左側の余白をなくす */
+.news-list li:first-child {
+  padding-left: 0;
+}
+
+/* 3つ目の右側の線と余白をなくす */
+.news-list li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+/* 日付とNEWS・PRESSを横並び */
+.date-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 日付 */
+.date {
+  margin: 0;
+}
+
+/* NEWS・PRESSの黒い札 */
+.date-area span {
+  display: inline-block;
+  width: 50px;
+  padding: 3px 0;
+  background-color: #000;
+  color: #f0f0f0;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ニュースのタイトル */
+.title {
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+.about {
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.about img {
+  width: 55%;
+}
+
+.about-img img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.about-text {
+  width: 45%;
+  padding: 40px;
+  transform: translateY(120px);
+}
+
+.about-text h2 {
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 8px;
+  margin: 0 0 0 50px;
+}
+
+.about-text h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 70px 50px;
+}
+
+.about-text h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  margin-top: 30px;
+}
+
+.about-text p {
+  margin-left: 50px;
+  position: relative;
+  top: -20px;
+  line-height: 2;
+}
+
+.business {
+  width: 90%;
+  max-width: 1000px;
+  margin: 200px auto 100px;
+}
+
+/*BUSINESS見出し*/
+.business-text h2,
+.business-text h3 {
+  font-weight: normal;
+  margin: 0; 
+}
+
+.business-text h2 {
+  font-size: 40px;
+  letter-spacing: 8px;
+}
+
+.business-text h3 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.business-text h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  margin-top: 30px;
+}
+
+/*左右2列*/
+.business-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  gap: 50px;
+  position: relative;
+  top: 100px;
+}
+
+.business-left,
+.business-right {
+  width: 46%;
+}
+
+.business-right {
+  transform: translateY(-80px);
+}
+
+
+/*一つの事業*/
+.business-item {
+  margin-bottom: 50px;
+}
+
+/*事業名*/
+.business-item h4 {
+  margin: 0 0 15px;
+  font-size: 13px;
+  position: relative;
+  margin-left: 18px;
+}
+
+.business-item h4::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 0.5px;
+  background-color: #000;
+
+  position: absolute;
+  left: -18px;
+  top: 50%;
+}
+
+/*画像*/
+.business-item img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.company-text h2,
+.company-text h3 {
+  font-weight: normal;
+}
+
+.company-text h2 {
+  font-size: 40px;
+  letter-spacing: 8px;
+}
+
+
+.company h3 {
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.company-text h3::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 0.5px;
+  background-color: #000;
+  margin-top: 45px;
+}
+
+.company-info > div {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.company-info dt,
+.company-info dd {
+  margin: 0;
+}
+
+.business-detail {
+  line-height: 2;
+}
+.company {
+  width: 90%;
+  max-width: 1000px;
+  height: 750px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.company-text {
+  width: 55%;
+  min-height: 500px;
+  padding: 80px 60px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.company-img {
+  box-sizing: border-box;
+  width: 50%;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: 2;
+}
+
+.company-img img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+#footer {
+  background-color: #fff;
+  padding: 40px 0 20px;
+}
+
+.footer-inner {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-left h2 {
+  font-size: 38px;
+  letter-spacing: 8px;
+  font-weight: 350;
+  margin: 0 0 60px;
+}
+
+.footer-left .copyright {
+  font-size: 10px;
+  margin: 0;
+}
+
+.footer-right p {
+  font-size: 14px;
+  line-height: 1.3;
+  margin: 0 0 15px;
+}
